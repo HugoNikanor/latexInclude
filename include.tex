@@ -1,0 +1,112 @@
+\RequirePackage[l2tabu, orthodox]{nag}	% Makes other libaries load better, somehow
+
+\documentclass[10pt, a4paper]{article}	% Change document type as needed
+
+% Swedish character support
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+
+
+
+% Makes the document look better
+\usepackage{fullpage}
+\usepackage{microtype}	% Load this after fonts
+\usepackage[document]{ragged2e}	% Left aligns the text, remove for better line fill.
+
+
+
+% Other packages for specific works
+\usepackage{color}	% Allows for coloured text
+\usepackage[usenames,dvipsnames]{xcolor}	% Adds more colours
+\usepackage{hologo}	% Latex Writing
+\usepackage{multicol}	% Allows for multiple columns
+\usepackage{verbatim}	% allows \begin{comment}
+\usepackage{graphicx}	%Image handling
+
+\newcommand{\breakWidth}{0.5cm}
+\newcommand{\lCurlBr}{{\color{BlueViolet}\{}}
+\newcommand{\rCurlBr}{{\color{BlueViolet}\}}}
+\newcommand{\lHardBr}{{\color{Orange}[}}
+\newcommand{\rHardBr}{{\color{Orange}]}}
+
+
+\title{\Hologo{LaTeX} Sample Document}
+\author{Hugo Hornquist}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\ttfamily
+
+
+{\color{blue} \textbackslash RequirePackage}\lHardBr l2tabu, orthodox\rHardBr\lCurlBr nag\rCurlBr 		\hfill \hfill	{\color{brown}\% Makes other libaries load better, somehow}
+\\[\breakWidth]
+ 
+{\color{blue} \textbackslash documentclass}\lHardBr 12pt, a4paper\rHardBr\lCurlBr article\rCurlBr		\hfill \hfill	{\color{brown}\% Change document type as needed}
+\\[\breakWidth]
+ 
+{\color{brown}\% Swedish chäråcter suppört}\\
+{\color{blue} \textbackslash usepackage}\lHardBr T1\rHardBr\lCurlBr fontenc\rCurlBr  \\
+{\color{blue} \textbackslash usepackage}\lCurlBr lmodern\rCurlBr  \\
+{\color{blue} \textbackslash usepackage}\lHardBr utf8\rHardBr\lCurlBr inputenc\rCurlBr  \\
+{\color{blue} \textbackslash usepackage}\lHardBr swedish\rHardBr\lCurlBr babel\rCurlBr 
+\\[\breakWidth]
+ 
+{\color{brown}\% Makes the document look better}\\
+{\color{blue} \textbackslash usepackage}\lCurlBr fullpage\rCurlBr  \\
+{\color{blue} \textbackslash usepackage}\lCurlBr microtype\rCurlBr \\
+{\color{blue} \textbackslash usepackage}\lHardBr document\rHardBr\lCurlBr ragged2e\rCurlBr 			\hfill \hfill {\color{brown}\% Left Aligns the text better}
+\\[\breakWidth]
+ 
+{\color{blue} \textbackslash usepackage}\lHardBr numbers\rHardBr\lCurlBr natbib\rCurlBr \hfill \hfill {\color{brown}\% \Hologo{BibTeX}}
+\\[\breakWidth]
+ 
+{\color{brown}\% Other packages for specific works} \\
+{\color{blue} \textbackslash usepackage}\lCurlBr color\rCurlBr 												\hfill \hfill {\color{brown}\% Allows for coloured text }\\
+{\color{blue} \textbackslash usepackage}\lHardBr usenames,dvipsnames\rHardBr\lCurlBr xcolor\rCurlBr 		\hfill \hfill {\color{brown}\% Adds more colours }\\
+{\color{blue} \textbackslash usepackage}\lCurlBr hologo\rCurlBr	 											\hfill \hfill {\color{brown}\% \Hologo{LaTeX} logos }\\
+{\color{blue} \textbackslash usepackage}\lCurlBr multicol\rCurlBr 											\hfill \hfill {\color{brown}\% Allows for multiple columns }\\
+{\color{blue} \textbackslash usepackage}\lCurlBr url\rCurlBr \\
+{\color{blue} \textbackslash usepackage}\lCurlBr verbatim\rCurlBr	\hfill \hfill	{\color{brown}\% Allows \textbackslash begin{comment} } \\
+{\color{blue} \textbackslash usepackage}\lCurlBr graphicx\rCurlBr	\hfill \hfill {\color{brown}\% Image handling}
+\\[\breakWidth]
+ 
+{\color{brown}\% Sample title}\\
+{\color{blue} \textbackslash title}\lCurlBr\textbackslash Hologo\lCurlBr LaTeX\rCurlBr Sample Document\rCurlBr  \\
+{\color{blue} \textbackslash author}\lCurlBr Hugo Hornquist\rCurlBr  \\
+{\color{blue} \textbackslash date}\lCurlBr \textbackslash today\rCurlBr
+
+\let\thefootnote\relax\footnote{There are some more commands in the source of this file.}
+\newpage
+
+\rmfamily
+\section*{Sample Document}
+\ttfamily
+
+{\color{blue} \textbackslash begin}\lCurlBr document\rCurlBr \\
+{\color{blue} \textbackslash maketitle}
+\\[\breakWidth]
+
+\sffamily
+Lorem ipsum dolor sit amet.
+\ttfamily
+\\[\breakWidth]
+
+\begin{comment}
+\begin{figure}[h]
+	\includegraphics[width=\textwidth, natwidth=0, natheigh=0]{sample.png}
+\end{figure}
+\end{comment}
+
+{\color{blue} \textbackslash bibliographystyle}\lCurlBr plainnat\rCurlBr\\
+{\color{blue} \textbackslash bibliography}\lCurlBr <references>\rCurlBr\\
+{\color{blue} \textbackslash end}\lCurlBr document\rCurlBr
+
+
+
+
+
+\end{document}
