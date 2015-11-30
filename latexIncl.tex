@@ -9,16 +9,17 @@
 % 	report 
 \documentclass[11pt, a4paper]{article}
 
-% Swedish character support
+% Better unicode support
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 \usepackage[utf8]{inputenc}
+% Language support, changes generated strings
 \usepackage[swedish]{babel}
 
 % Making the document look better
 %\usepackage{fullpage}           % Makes the margins smaller
-%\usepackage[document]{ragged2e} % Left aligns the text, remove for better line fill.
-\usepackage{microtype}          % Load this after fonts
+%\usepackage[document]{ragged2e} % Left aligns the text
+\usepackage{microtype}           % Load this after fonts
 
 % BibTeX
 \usepackage[numbers]{natbib}
@@ -29,11 +30,14 @@
 %\usepackage{color}                       % Allows for coloured text
 %\usepackage[usenames,dvipsnames]{xcolor} % Adds more colours
 %\usepackage{hologo}                      % LaTeX logos
-\usepackage{verbatim}                    % allows \begin{comment}
+\usepackage{verbatim}                     % allows \begin{comment}
 %\usepackage{graphicx}                    % Image handling
-\usepackage{hyperref}                    % Allows for URL embedding
+\usepackage[hidelinks]{hyperref}          % Allows for URL embedding
 %\usepackage{paralist}                    % In-line lists 
 %\usepackage{dirtytalk}                   % adds \say{} for citations
+%\usepackage{lettrine}                    % Large letter at start of paragraph
+%\usepackage{lmodern}                     % Something is better?
+%\usepackage{titling}                     % Allows for moving the title higher up on the page
 
 \author{Hugo Hornquist, Te13c}
 \date{\today}
@@ -43,7 +47,15 @@
 \maketitle
 
 
-
+	
+%\DeclareGraphicsExtensions{.png}
+\begin{comment}
+\begin{thebibliography}{9}
+\bibitem{Key}
+	Example Name,
+	Title
+\end{thebibliography}
+\end{comment}
 %\bibliographystyle{plainnat}
 %\bibliography{file}
 \end{document}
